@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("reset.css");
+
+html,body{height:100%;}
+body{background:#eaeaea; font:12px/1.8 Tahoma; color:#555;}
+
+#wrapper{width:100%; margin:auto;}
+
+#login{width:300px;
+	   position:absolute;
+	   top:50%;
+	   left:50%;
+	   margin-left:-150px;
+	   margin-top:-150px;
+}
+
+#login h2{text-align:left;
+		  font:bold 14px;
+		  text-shadow:1px 1px 1px #999;
+		  color:#ffffff;
+		  padding:1px 0 0 10px;
+}
+
+.kotak{background:#ffffff;
+	   position:relative;
+	   border:1px solid #eaeaea;
+	   display:block;
+	   margin:0px;
+	   padding:0px;
+}
+
+#atas{width:300;
+	  height:25px;
+	  background:#eaeaea url(../images/atas.png)no-repeat;
+}
+
+#kiri{float:left;
+	  width:65px;
+	  height:65px;
+	  background:#ffffff url(../images/lg.png)no-repeat;
+	  margin:50px 10px 0px 10px;	
+}
+
+#kanan{float:left; width:210px;}
+
+.main{margin:20px 5px 20px 10px;}
+
+#bawah{clear:both;
+       width:300;
+	   height:25px;
+	   background:#eaeaea url(../images/bawah.png)no-repeat;
+	   padding-top:5px;
+	   font:10px Tahoma;
+	   text-align:center;
+	   color:#ffffff;
+}
+
+form dt{margin-bottom:2px;}
+form dt label{cursor:pointer; font:bold 11px Tahoma; color:#555;}
+form dd{margin-bottom:10px;}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{color:#000000;
+	   clear:both;
+	   border:#c5e3fb solid 1px;
+	   padding:4px 5px;
+	   font-family: Tahoma; 
+	   font-size: 8pt;
+}
+
+input#username,input#adminpassword{width:180px;}
+
+.button{font:bold 11px Tahoma;
+		text-align:center;
+		height:25px;
+		line-height:18px;
+		padding:0px 5px;
+		background-color: #336CA1;
+		border: 1px solid #c5e3fb;
+		color: #FFFFFF;
+		cursor : pointer; 
+}

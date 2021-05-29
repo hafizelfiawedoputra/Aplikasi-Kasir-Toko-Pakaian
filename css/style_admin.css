@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1, h2, h3, h4, h5{margin:0px; padding:0px; font-weight:bold;}
+a{color:#336CA1; text-decoration:none;}
+a:hover{color:#6C91C0; text-decoration:none;}
+.clear{clear: both;
+	   content: ' ';
+	   display: block;
+	   overflow: hidden;
+	   visibility: hidden;
+	   width: 0;
+	   height: 0;
+}
+
+body{margin:0px;
+	 background-color:#336CA1;
+	 font:normal 11px Verdana, Geneva, sans-serif;
+	 height:100%;
+	 overflow:hidden;
+}
+#wrapper{margin:0 auto;
+	     width:900px;
+	     height:auto;
+	     background-color:#BFBFBF;
+		 padding-left:10px;
+		 padding-right:10px;
+}
+#header{position:relative;
+		width: 860px;
+		height:100px;
+		background-color:#D4D4D4;
+		padding:0 20px;
+}
+#header h3, 
+#header h4{position:relative; color:#336CA1; text-align:center;}
+#header h3{font:bold 30px "Century Gothic", Tahoma;}
+#header h4{font:bold 14px "Century Gothic", Tahoma;}
+#menu{display:block; position:relative; background-color:#336CA1; height:30px;}
+
+/********************drop down menu********************/
+/* level 1*/
+ul{list-style:none; margin:0px; padding:0px;}
+ul.dropdown{position:relative;}
+ul.dropdown li{font-weight:bold; float:left; zoom:1; background:none;}
+ul.dropdown a:visited, 
+ul.dropdown a:link{color:#ffffff; text-decoration:none;}
+ul.dropdown a:hover{color:#ffffff; font-weight:bold;}
+ul.dropdown li a{display:block; 
+				 font-size:12px; 
+				 padding:6px 8px 8px 8px; 
+				 border-right:1px solid #BFBFBF; 
+				 color:#222;
+}
+ul.dropdown li:last-child a{border-right:none;}
+ul.dropdown li:hover{background:#6C91C0; color:#ffffff; position:relative;}
+/*level 2*/
+ul.dropdown ul{width:200px; visibility:hidden; position:absolute;}
+ul.dropdown ul li{font-weight:normal; 
+				  background:#336CA1; 
+				  color:#000000; 
+				  border-bottom:1px solid #BFBFBF; 
+				  float:none;
+}
+ul.dropdown ul li a{border-right:none; display:block; }  
+/*level 3*/
+ul.dropdown ul ul {left: 100%; top: 0; }
+ul.dropdown li:hover > ul {visibility:visible;}
+/********************end drop down menu********************/
+
+/********************drop down menu beranda********************/
+ol.beranda{ float:none; line-height:160%;}
+ol.beranda li{margin-left:-24px;}
+/********************end drop down menu beranda********************/
+#content{position:inherit; 
+		 margin:0px; 
+		 padding:0px; 
+		 background-color:#FFFFFF; 
+		 height:467px; 
+		 overflow:hidden;
+}
+#content .main_content{padding:10px 20px;}
+#content .main_content .judul_awal h2{font-size:18px; color:#336CA1;}
+#content .main_content .judul h2{float:left; width:430px; font-size:18px; color:#336CA1;}
+#content .main_content .tambah{float:left; width:430px; text-align:right;}
+#content .main_content p{text-align:justify; line-height:160%;}
+#content .main_content .area_main{float:left;
+								  width:860px;
+								  height:355px; 
+								  overflow:auto; 
+								  margin-top:10px; 
+								  border-top:1px dashed #336CA1; 
+								  padding:10px 0; 
+								  border-bottom:1px dashed #336CA1;
+}
+#footer{background-color:#D4D4D4; 
+		font-size:10px; 
+		text-align:center; 
+		margin:0px; 
+		padding:5px 20px; 
+		line-height:160%;
+}
+
+input,
+textarea,
+select{color:#000000;
+	   clear:both;
+	   border:#c5e3fb solid 1px;
+	   padding:4px 5px;
+	   font-family: Verdana, Geneva, sans-serif; 
+	   font-size: 8pt;
+}
+textarea{width:300px;height:50px;}
+
+.button{font:bold 11px Tahoma;
+		text-align:center;
+		height:25px;
+		line-height:20px;
+		padding:0 10px;
+		background-color: #336CA1;
+		border: 1px solid #c5e3fb;
+		color: #FFFFFF;
+		cursor : pointer; 
+}
+
+table.judul,table.data{width:100%; border:none;}
+table.judul{border:none; background-color:#336CA1;}
+table.judul tr th{color:#ffffff; 
+				  text-transform:capitalize; 
+				  text-align:center; 
+				  padding:7px 0;
+}
+div.data{height:300px; overflow:auto;}
+div.bar{height:220px; overflow:auto;}
+div.data_trans{height:210px; overflow:auto;}
+table.data{border:none; background-color:#F8F8F8;}
+table.data td{padding:6px 0;}
+table.data tr:nth-child(odd) td{background-color:#fff;}
+table.data tr:nth-child(even) td{background-color:#f7f7f7;}
+table.data tr:hover td{background-color:#e3f2f7;}
+div.jml_data{padding:9px 0 0 3px;}
+.trans_top{float:left; width:100%; margin:-5px 0 5px 0;}
+.trans_top_left{float:left; width:80px; font-weight:bold;}
+.trans_top_right{float:left; width:350px; font-weight:bold;}
+.trans_top_left2, .trans_top_right2{float:left; width:410px; font-weight:bold;}
+.trans_top_left2{padding-bottom:5px; border-bottom:1px dashed #336CA1;}
+.trans_top_right2 h3{font-size:18px;}
+.trans_bottom{width:100%; border-top:1px dashed #336CA1; margin-bottom:6px;}
+.trans_bottom_left{display:block; 
+				   position:relative; 
+				   float:left; 
+				   width:240px; 
+				   font-weight:bold; 
+				   border-right:1px dashed #336CA1;
+}
+.trans_bottom_right{display:block;
+					position:relative; 
+					float:left; 
+					width:600px; 
+					padding-left:10px; 
+					font-weight:bold;
+}
+#ok, #up, #ds{background-color:transparent; border:none;}
+.item_barang, 
+.bayar{margin:0 auto; 
+	  width:475px; 
+	  border-left:5px solid #f7f7f7; 
+	  padding-left:3px; 
+	  border-right: 5px solid #f7f7f7; 
+	  padding-right:5px; 
+}
+item_barang, .fil_nama{margin-bottom:5px;}
+item_barang, .data_item{height:262px; overflow:auto;}
+.bayar{margin-top:125px; font-weight:bold; font-size:14px;}
+.bayar input{font-size:20px; text-align:right;}
+.bayar input.total{background-color:#2D2D2D; color:#ffffff;}
+.struk{margin: 0 auto; 
+	   width:200px;	
+	   background-color:#ffffff; 
+	   font-size:8px; 
+	   font-family:Arial, Helvetica, sans-serif;
+}
+.struk .struk_judul{text-align:center;}
+.struk .struk_garis{width:200px; border-bottom:1px solid #2D2D2D;}
+
+.judul_lap h2{display:none;}
+table.lap{width:100%; 
+          border: 1px solid #999999; 
+		  border-collapse:collapse; 
+		  font-size:9px;
+}
+table.lap th{color: #FFFFFF;
+   			 text-transform:capitalize;
+   			 text-align: center;
+   			 padding: 0.5em;
+   			 border: 1px solid #336CA1;
+   			 border-collapse: collapse;
+   			 background-color: #336CA1;
+}
+table.lap td{padding: 0.5em;
+   vertical-align:middle;
+   border: 1px solid #336CA1;
+   border-collapse: collapse;
+}
+table.tanggal,table.form{margin-bottom:5px;}
+.barcode{float:left; width:100px; height:100px; margin:5px 5px 0 5px;}
+
+.rinci_brg .data_trans{height:260px; overflow:auto;}
+div.form_rinci table.form tr td{font-weight:bold;}
+div.form_rinci table.form tr td input{background-color:#ffffff;}
